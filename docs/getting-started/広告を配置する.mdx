@@ -1,0 +1,67 @@
+---
+id: place-an-ad
+title: 広告を配置する
+description: Hexadを使って広告を設置する方法について解説します。
+---
+
+import useBaseUrl from "@docusaurus/useBaseUrl";
+
+実際に広告を配置する方法について解説します。
+
+## AdManager を設置する
+
+`HexadSDK/Prefabs`ディレクトリの中にある、 **AdManager.prefab** をシーン Hierarchy にドラッグ＆ドロップで設置しましょう。
+
+<img
+  alt="AdManager を配置する"
+  src={useBaseUrl("img/getting-started/ad-manager.png")}
+/>
+
+AdManager を選択し、Inspector で Access Token を入力します。
+
+この Access Token は SDK 配布時に Hexad から払い出されるものです。
+
+:::caution
+この Access Token をもとにアクセス解析や収益の分配を行うので、絶対に他人に共有したりしないでください。
+:::
+
+## バナー広告を設置する
+
+`HexadSDK/Prefabs`ディレクトリの中にある、 **Banner.prefab** をシーン Hierarchy にドラッグ＆ドロップで設置しましょう。
+
+<img
+  alt="バナーを配置する"
+  src={useBaseUrl("img/getting-started/place-a-banner.png")}
+/>
+
+バナーには、向きがあります。上の画像の例では、バナーが透けてしまっています。
+
+`Eキー`をエディタ上で押して`Rotate Tool`を選択し、向きを調整して、Cube に貼り付けてみましょう。
+
+<img
+  alt="バナーを回転する"
+  src={useBaseUrl("img/getting-started/rotate-a-banner.png")}
+/>
+
+貼り付けた様子
+
+<img
+  alt="バナーを回転する"
+  src={useBaseUrl("img/getting-started/fit-a-banner.png")}
+/>
+
+## Ad Location Id を設定する
+
+広告をゲームの中でユニークなものとして、設定するために Ad Location Id(UUIDv4)を設定します。
+
+UUID を生成する方法として色々考えられますが、[こちらのツール](https://www.uuidgenerator.net/version4)を使うと簡単に生成することができるでしょう。
+
+<img
+  alt="バナーを回転する"
+  src={useBaseUrl("img/getting-started/ad-location-id.png")}
+/>
+
+:::caution
+大事なのでもう 1 回言いますが、Ad Location Id はゲームでユニークでないといけません。
+広告を複数設置する場合は、複数の UUID を生成してください。
+:::
