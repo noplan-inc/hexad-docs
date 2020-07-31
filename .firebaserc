@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "vr-ads"
+  },
+  "targets": {
+    "vr-ads": {
+      "hosting": {
+        "docs-site": [
+          "hexad-docs"
+        ]
+      }
+    }
   }
 }
