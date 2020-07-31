@@ -1,104 +1,97 @@
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  title: "Hexad開発者ドキュメント",
+  tagline: "The tagline of my site",
+  url: "https://your-docusaurus-test-site.com",
+  baseUrl: "/",
+  onBrokenLinks: "throw",
+  favicon: "img/favicon.ico",
+  organizationName: "noplan-inc", // Usually your GitHub org/user name.
+  projectName: "hexad-docs", // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: "Hexad開発者ドキュメント",
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: "My Site Logo",
+        src: "img/logo.svg",
       },
       items: [
         {
-          to: 'docs/',
-          activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'left',
+          to: "docs/",
+          activeBasePath: "docs",
+          label: "ドキュメント",
+          position: "left",
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
+          href: "https://hexad.jp",
+          label: "Hexad",
+          position: "right",
         },
       ],
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       links: [
         {
-          title: 'Docs',
+          title: "Docs",
           items: [
             {
-              label: 'Style Guide',
-              to: 'docs/',
+              label: "Style Guide",
+              to: "docs/",
             },
             {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
+              label: "Second Doc",
+              to: "docs/doc2/",
             },
           ],
         },
         {
-          title: 'Community',
+          title: "Community",
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: "Stack Overflow",
+              href: "https://stackoverflow.com/questions/tagged/docusaurus",
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: "Discord",
+              href: "https://discordapp.com/invite/docusaurus",
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: "Twitter",
+              href: "https://twitter.com/docusaurus",
             },
           ],
         },
         {
-          title: 'More',
+          title: "More",
           items: [
             {
-              label: 'Blog',
-              to: 'blog',
+              label: "Blog",
+              to: "blog",
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: "GitHub",
+              href: "https://github.com/facebook/docusaurus",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} no plan inc. Built with Docusaurus.`,
     },
   },
   presets: [
     [
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       {
         docs: {
+          // routeBasePath: "",
           // It is recommended to set document id as docs home page (`docs/` path).
-          homePageId: 'doc1',
-          sidebarPath: require.resolve('./sidebars.js'),
+          homePageId: "getting-started/quick-tour",
+          sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+          editUrl: "https://github.com/noplan-inc/hexad-docs/edit/master/",
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       },
     ],
