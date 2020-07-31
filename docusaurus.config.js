@@ -32,45 +32,36 @@ module.exports = {
       style: "dark",
       links: [
         {
-          title: "Docs",
-          items: [
-            {
-              label: "Style Guide",
-              to: "docs/",
-            },
-            {
-              label: "Second Doc",
-              to: "docs/doc2/",
-            },
-          ],
-        },
-        {
           title: "Community",
           items: [
             {
               label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
+              href: "https://stackoverflow.com/questions/tagged/hexad",
             },
             {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
+              label: "Discord@公式開発者コミュニティ",
+              href: "https://discord.gg/QHu7Uz8",
             },
             {
               label: "Twitter",
-              href: "https://twitter.com/docusaurus",
+              href: "https://twitter.com/noplan_inc",
             },
           ],
         },
         {
-          title: "More",
+          title: "About",
           items: [
             {
-              label: "Blog",
-              to: "blog",
+              label: "Hexad公式HP",
+              href: "https://hexad.jp",
+            },
+            {
+              label: "no plan inc公式HP",
+              href: "https://noplan-inc.com",
             },
             {
               label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
+              href: "https://github.com/noplan-inc/hexad-docs",
             },
           ],
         },
