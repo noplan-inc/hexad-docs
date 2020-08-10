@@ -17,9 +17,18 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
   src={useBaseUrl("img/getting-started/ad-manager.png")}
 />
 
-AdManager を選択し、Inspector で Access Token を入力します。
+## AdManager に Access Token と Media Id を設定する
 
-この Access Token は SDK 配布時に Hexad から払い出されるものです。
+AdManager を選択し、Inspector で Access Token と Media Id を入力します。
+
+<img
+  alt="AdManagerにaccessTokenとMediaIdをいれる"
+  src={useBaseUrl("img/getting-started/set-access-token.png")}
+/>
+
+この Access Token と Media Id は SDK 配布時に Hexad から払い出されるものです。
+
+Media Id はゲームタイトルを区別するために利用されるもので、ゲームごとに設定が必要になります。
 
 :::caution
 この Access Token をもとにアクセス解析や収益の分配を行うので、絶対に他人に共有したりしないでください。
@@ -59,7 +68,7 @@ UUID を生成する方法として色々考えられますが、[こちらの�
 
 <img
   decoding="async"
-  alt="バナーを回転する"
+  alt="Ad Location Id"
   src={useBaseUrl("img/getting-started/ad-location-id.png")}
 />
 
