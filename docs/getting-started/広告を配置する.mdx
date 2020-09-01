@@ -60,11 +60,21 @@ Media Id はゲームタイトルを区別するために利用されるもの�
   src={useBaseUrl("img/getting-started/fit-a-banner.png")}
 />
 
+バナーのサイズを変えることは可能ですが、縦横比を調整するのは禁止しています。
+
 ## Ad Location Id を設定する
 
 広告をゲームの中でユニークなものとして、設定するために Ad Location Id(UUIDv4)を設定します。
 
 UUID を生成する方法として色々考えられますが、[こちらのツール](https://www.uuidgenerator.net/version4)を使うと簡単に生成することができるでしょう。
+
+<img
+  decoding="async"
+  alt="UUIDを生成するツール"
+  src={useBaseUrl("img/getting-started/uuidv4.png")}
+/>
+
+`Banner 600x500`の下の `Panel` に Ad Location Id を設定します。
 
 <img
   decoding="async"
