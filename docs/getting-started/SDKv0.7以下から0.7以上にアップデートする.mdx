@@ -1,0 +1,47 @@
+---
+id: update-sdk
+title: SDKv0.7以下から0.7以上にアップデートする
+description: HexadSDKをアップデートする方法を紹介します。
+---
+
+import useBaseUrl from "@docusaurus/useBaseUrl";
+
+## HexadSDK を削除する
+
+`Plugins/HexadSDK`ディレクトリを削除します。
+
+<img
+  alt="HexadSDKを削除する"
+  src={useBaseUrl("img/getting-started/delete-sdk.png")}
+/>
+
+## AdManager と Banner を削除する
+
+AdManager と Banner を Hierarchy から削除します。
+
+<img
+  alt="HexadSDKを削除する"
+  src={useBaseUrl("img/getting-started/delete-manager.png")}
+/>
+
+## SDK をインストール
+
+[こちら](UnityにSDKをインストールする.mdx)を参考にインストールしてください！
+
+## 広告を配置する
+
+クリッカブル広告にするために、Main Camera に **Physics Raycaster**を追加してください。
+
+<img
+  alt="Main Camera"
+  src={useBaseUrl("img/getting-started/camera-inspector.png")}
+/>
+
+<img
+  alt="physics-raycaster"
+  src={useBaseUrl("img/getting-started/physics-raycaster.png")}
+/>
+
+:::danger
+こちらの設定をし忘れると、クリックできない広告となってしまい、弊社の収益化審査で落ちてしまったり、**報酬が支払われない可能性**があります。
+:::

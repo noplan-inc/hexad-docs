@@ -34,16 +34,16 @@ Media Id はゲームタイトルを区別するために利用されるもの�
 この Access Token をもとにアクセス解析や収益の分配を行うので、絶対に他人に共有したりしないでください。
 :::
 
-## バナー広告を設置する
+## 動画広告を設置する
 
-`HexadSDK/Prefabs`ディレクトリの中にある、 **Banner.prefab** をシーン Hierarchy にドラッグ＆ドロップで設置しましょう。
+`HexadSDK/Prefabs`ディレクトリの中にある、 **Video 16x9.prefab** をシーン Hierarchy にドラッグ＆ドロップで設置しましょう。
 
 <img
   alt="バナーを配置する"
   src={useBaseUrl("img/getting-started/place-a-banner.png")}
 />
 
-バナーには、向きがあります。上の画像の例では、バナーが透けてしまっています。
+広告には、向きがあります。上の画像の例では、広告が透けてしまっています。
 
 `Eキー`をエディタ上で押して`Rotate Tool`を選択し、向きを調整して、Cube に貼り付けてみましょう。
 
@@ -52,15 +52,9 @@ Media Id はゲームタイトルを区別するために利用されるもの�
   src={useBaseUrl("img/getting-started/rotate-a-banner.png")}
 />
 
-貼り付けた様子
-
-<img
-  decoding="async"
-  alt="バナーを回転する"
-  src={useBaseUrl("img/getting-started/fit-a-banner.png")}
-/>
-
-バナーのサイズを変えることは可能ですが、縦横比を調整するのは禁止しています。
+:::caution
+広告のサイズを変えることは可能ですが、**縦横比を調整するのは禁止**しています。
+:::
 
 ## Ad Location Id を設定する
 
@@ -74,7 +68,7 @@ UUID を生成する方法として色々考えられますが、[こちらの�
   src={useBaseUrl("img/getting-started/uuidv4.png")}
 />
 
-`Banner 600x500`の下の `Panel` に Ad Location Id を設定します。
+`Video 16x9`の下の `Panel` に Ad Location Id を設定します。
 
 <img
   decoding="async"
@@ -85,4 +79,22 @@ UUID を生成する方法として色々考えられますが、[こちらの�
 :::caution
 大事なのでもう 1 回言いますが、Ad Location Id はゲームでユニークでないといけません。
 広告を複数設置する場合は、複数の UUID を生成してください。
+:::
+
+## クリッカブルにする
+
+クリッカブル広告にするために、Main Camera に **Physics Raycaster**を追加してください。
+
+<img
+  alt="Main Camera"
+  src={useBaseUrl("img/getting-started/camera-inspector.png")}
+/>
+
+<img
+  alt="physics-raycaster"
+  src={useBaseUrl("img/getting-started/physics-raycaster.png")}
+/>
+
+:::danger
+こちらの設定をし忘れると、クリックできない広告となってしまい、弊社の収益化審査で落ちてしまったり、**報酬が支払われない可能性**があります。
 :::

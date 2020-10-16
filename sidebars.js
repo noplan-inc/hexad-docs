@@ -7,6 +7,7 @@ module.exports = {
       "getting-started/download-the-sdk",
       "getting-started/install-the-unity-sdk",
       "getting-started/place-an-ad",
+      "getting-started/update-sdk",
     ],
   },
 };
